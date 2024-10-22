@@ -12,8 +12,8 @@ export default function CardStatus() {
                 </div>
             </div>
             <div className="flex flex-grow space-x-3 flex-row justify-center items-center">
-                <CarSimple size={20} />
-                <p></p>
+                <CarSimple size={26} />
+                <p className="font-black text-xl">PMV9394</p>
             </div>
             <div className="flex justify-center items-center">
                 <div className="flex-1 flex justify-center">

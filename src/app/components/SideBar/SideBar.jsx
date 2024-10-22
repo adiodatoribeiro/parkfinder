@@ -20,5 +20,6 @@ export default function SideBar(){
                 <LetterCircleP color="white" size={26} />
             </div>
         </div>
+        
     )
 }
