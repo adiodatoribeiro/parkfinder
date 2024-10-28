@@ -4,14 +4,19 @@ import Button from "../components/Button/Button";
 import SideBar from "../components/SideBar/SideBar";
 import { useState } from "react";
 import ModalWithBackdrop from "../components/ModalWithBackdrop/ModalWithBackdrop";
+import InputWithLabel from "../components/inputWithLabel/inputWithLabel";
 
 export default function ParkPage() {
     const [showModal, setShowModal] = useState(false)
+    
     return (
         <div className="flex relative min-h-full items-center flex-1 flex-col justify-center px-6 py-12 lg:px-8">
             <SideBar />
             <ModalWithBackdrop show={showModal} onClose={() => setShowModal(false)}>
-                
+                <div className="flex-flex-col space-y-4">
+                    <InputWithLabel label="Nº Identificador" type="number"/>
+                    <Button>Salvar</Button>
+                </div>
             </ModalWithBackdrop>
             <div className="flex flex-col flex-grow w-full justify-start items-end pl-24">
                 <div className="flex">
